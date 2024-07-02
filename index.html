@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MM By Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-size: 40px;
+        font-family: "Lobster Two";
+      }
+      body {
+        background-image: url(photo.jpg);
+        background-repeat: no-repeat;
+      }
+      .btn {
+        border-radius: 30px;
+        width: 200px;
+      }
+
+      h1 {
+        color: rgb(231, 190, 115);
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1>Quote of the Day</h1>
+      <form onsubmit="show()">
+        <br /><br />
+        <h2 id="msg" />
+      </form>
+
+      <script>
+        function show() {
+          let msg = document.getElementById("msg");
+
+          let messages = [
+            "When you have a dream, you've got to grab it and never let go.",
+            "Nothing is impossible....",
+            "There is nothing impossible to they who will try.",
+            "The bad news is time flies....",
+            "Life has got all those twists and turns....",
+            "Keep your face always toward the sunshine, and shadows will fall behind you.",
+            "Start where you are....",
+            "When you have a dream, you've got to grab it and never let go.” Carol Burnett.",
+            "The best way to predict your future is to create it.",
+            "Believe you can and you're halfway there.",
+            "Do one thing every day that scares you.",
+            "Women challenge the status quo because we are never it.” —Cindy Gallop",
+            "We don’t just sit around and wait for other people. We just make, and we do.” —Arlan Hamilton",
+            "Think like a queen. A queen is not afraid to fail. Failure is another stepping stone to greatness.” —Oprah Winfrey",
+            "The strongest actions for a woman is to love herself, be herself and shine amongst those who never believed she could.” —Unknown",
+            "Whenever you see a successful woman, look out for three men who are going out of their way to try to block her.” —Yulia Tymoshenko",
+            "The thing women have yet to learn is nobody gives you power. You just take it.” ― Roseanne Barr",
+            "No woman wants to be in submission to a man who isn’t in submission to God!” ―T. D. Jakes",
+            "A witty woman is a treasure; a witty beauty is a power.” ― George Meredith",
+            "When a woman becomes her own best friend, life is easier.” —Diane Von Furstenberg",
+            "If you want something said, ask a man; if you want something done, ask a woman.” —Margaret Thatcher",
+            "We need women at all levels, including the top, to change the dynamic, reshape the conversation, to make sure women’s voices are heard and heeded, not overlooked and ignored.” —Sheryl Sandberg",
+            "It took me quite a long time to develop a voice, and now that I have it, I am not going to be silent.” —Madeleine Albright",
+            "Women must learn to play the game as men do.” —Eleanor Roosevelt",
+            "I swear, by my life and my love of it, that I will never live for the sake of another man, nor ask another man to live for mine.” —Ayn Rand",
+          ];
+          let r = parseInt(Math.random() * messages.length);
+          msg.innerHTML = messages[r];
+        }
+        show();
+        setInterval(show, 5000);
+      </script>
+    </center>
+  </body>
+</html>
